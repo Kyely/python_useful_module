@@ -14,3 +14,15 @@ csvFile = open(CSV_file_path, "r")
 reader = csv.reader(csvFile)
 for csv_line in reader:
     print csv_line
+csvFile.seek(os.SEEK_SET,0)
+for csv_line in reader:
+    print csv_line
+csvFile.close()
+
+with open(CSV_file_path, "r") as csvFile:
+    reader = csv.reader(csvFile)
+    for csv_line in reader:
+        print csv_line
+    csvFile.seek(os.SEEK_SET,0)
+    for csv_line in reader:
+        print csv_line
