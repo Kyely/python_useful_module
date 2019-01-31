@@ -37,7 +37,7 @@ with open(CSV_file_path_400K, "r") as csvFile_400K:
         fifo_occupancy_400K.append(int(csv_line_400K[0]))
         fifo_number_400K.append(int(float(csv_line_400K[1])))
         fifo_percentage_400K.append(float(csv_line_400K[2]))
-
+####################################################
 plt.figure(figsize=[8,4])
 bar_para={}
 bar_para['edgecolor']=(0, 0, 0)
@@ -91,7 +91,6 @@ fig1.show()
 fifo_occupancy_png_file =os.path.dirname(CSV_file_path_200K)+r'/fifo_occupancy.png'
 fig1.savefig(fifo_occupancy_png_file)
 ####################################################
-
 plt.figure(figsize=[8,4])
 bar_para={}
 bar_para['edgecolor']=(0, 0, 0)
@@ -146,3 +145,4 @@ fig1.show()
 
 fifo_occupancy_log_png_file =os.path.dirname(CSV_file_path_200K)+r'/fifo_occupancy_log.png'
 fig1.savefig(fifo_occupancy_log_png_file)
+####################################################
